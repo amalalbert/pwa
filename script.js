@@ -21,7 +21,7 @@ if ("serviceWorker" in navigator) {
 let deferredPrompt;
 const installBtn = document.getElementById("install-btn");
 
-window.addEventListener("beforeinstallprompt", (event) => {
+window.addEventListener('beforeinstallprompt', (event) => {
   event.preventDefault();
   deferredPrompt = event;
   installBtn.style.display = "block";
